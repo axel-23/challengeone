@@ -49,13 +49,13 @@ body {
   color: var(--gray-400);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #encryptText, #decryptText {
     width: calc(50% - 10px);
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .buttons {
     display: grid;
     gap: .5rem;
