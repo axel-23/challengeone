@@ -46,10 +46,10 @@
                   minúsculas y sin acentos</span
                 >
                 <div class="buttons">
-                  <button type="button" id="encryptText" class="btn btn-lg p-2">
+                  <button type="button" id="encryptText" class="btn btn-lg p-2 w-md-100">
                     Encriptar
                   </button>
-                  <button type="button" id="decryptText" class="btn btn-lg p-2">
+                  <button type="button" id="decryptText" class="btn btn-lg p-2 w-md-100">
                     Desencriptar
                   </button>
                 </div>
@@ -59,8 +59,8 @@
           </div>
         </div>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-4 sombra">
-          <div class="no-message-img m-1 mw-100 mx-auto d-none d-sm-block"></div>
-          <div class="p-5 p-md-2">
+          <div class="no-message-img m-1 mw-100 mx-auto d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block"></div>
+          <div class="p-5 p-sm-3 p-md-4">
             <p class="no-message">Ningún mensaje fue encontrado</p>
             <p class="message" id="outputText">
               Ingresa el texto que desees encriptar o desencriptar.
@@ -80,7 +80,7 @@
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0">Elaborado por </span>
+          <span class="mb-3 mb-md-0">Elaborado por <p id="demo"></p></span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -114,5 +114,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/app.js"></script>
+    <script>
+      document.getElementById("demo").innerHTML = screen.width + " x " + screen.height;
+    </script>
   </body>
 </html>
